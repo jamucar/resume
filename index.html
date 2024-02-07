@@ -21,9 +21,6 @@
 		line-height:1.2
 	}
 
-	aside{
-		font-size: 1em;
-	}
 	@media print{
 		body{
 			max-width:none
@@ -32,6 +29,8 @@
 
 	header{
 		border-bottom: 1px solid black; 
+        display: flex;
+        flex-direction: column;
 	}
 
 	.skills{
@@ -43,13 +42,19 @@
 			columns:2;
 		}
 	}
-	
-	@media(min-width: 40em){
+	aside{
+            margin-bottom: 1em;
+            font:1em/1.22 sans-serif
+        }
+	@media(min-width: 45em){
 		header{
-			display: flex;
+			flex-direction: row;
 			align-items:center;
 			justify-content: space-between;
 		}
+        aside{
+            margin-bottom: 0;
+        }
 	}
 
 </style>
