@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="data:image/png;base64,">
+<title>JMC Resume</title>
+<style>
+	@media (prefers-color-scheme: dark){
+		body {
+			background:#000
+		}
+	}
+	body{
+		margin:5em auto;
+		max-width:50em;
+		padding:0 .62em 3.24em;
+		font:1.2em/1.62 sans-serif
+	}
+
+	h1,h3 {
+		line-height:1.2
+	}
+
+	@media print{
+		body{
+			max-width:none
+		}
+	}
+
+	header{
+		border-bottom: 1px solid black; 
+	}
+
+	.skills{
+		font-weight:bold;
+	}
+
+	@media(min-width:30em){
+		.skills{
+			columns:2;
+		}
+	}
+	
+	@media(min-width: 40em){
+		header{
+			display: flex;
+			align-items:center;
+			justify-content: space-between;
+		}
+	}
+
+</style>
+<article>
+	<header>
+		<h1>Javier Mu&#241oz</h1>
+		<aside> <a href="mailto:jamucar@gmail.com">jamucar@gmail.com</a>  
+			| <a href="https://www.linkedin.com/in/javier-muñoz-carbonell-074347131">
+			LinkdIn&#174 Profile</a> 
+			| +1(939) 545-2958</aside>
+	</header>
+	
+	<h3>EXECUTIVE SUMMARY</h3>
+	<p>A <strong>seasoned software developer</strong> specialized in clean, scalable code production and maintenance.  Skilled in .NET, React and database architecture, with a solution-driven approach.  Commited to delivering high-quality results and staying abreast of industry trends and standards.</p>
+
+	<h3>FUNCTIONAL EXPERTISE</h3>
+	<ul class="skills">
+		<li>C#</li>
+		<li>SQL</li>
+		<li>React</li>
+		<li>GIT</li>
+		<li>Agile Scrum</li>
+		<li>.NET Framework</li>
+	</ul>
+	<h3>FUNCTIONAL EXPERTISE DEMONSTRATED</h3>
+	<p><a title="iMiS" href="https://imispr.com/">iMiS</a><br/>
+	February 2020 - Present<br/>
+	iMiS is a software solutions corporation with 8 employees and an anual 
+	revenue of ~3 million.  The company specializes in distributing 
+	<a href="https://www.aveva.com/">AVEVA</a>
+	products and developing tailor-made software solution for 
+	pharmaceutical and manufacturing companies including notable clients such 
+	as Schering, Abbott, Baxter, CocaCola, Pepsi, Cordis, and AAA in 
+	Puerto Rico and the Caribean.<br/>
+	<strong>Full Stack Software Developer</strong><br/>
+	Leads a cross-functional team in an Agile Scrum environment to develop
+	client-specific applications. My key responsabilities and areas of expertise 
+	include:
+	<ul>
+		<li><strong>C# | .NET: </strong>
+			Utilizing C# and .NET, I create the server data rendering layer
+			and modify identity models to meet application security specifications.  This
+			involves considering user access, locations and roles based on Active 
+			Directory.  Data is supplied by either GraphQL (<a href="https://chillicream.com/"
+				>ChilliCream</a>) or 
+			RestAPI.
+		</li>
+		<li><strong>Typescript | React: </strong>
+			Disigning user-friendly and responsive client interfaces, I develop
+			applications that can run on the web browser or be locally installed 
+			in computers and mobile divices.  When data is rendered by GraphQL, I
+			leverage <a href="https://www.apollographql.com/docs/react/"
+				>Apollo Client</a>, and when working with Rest API, I 
+			utilize <a href="https://axios-http.com/docs/intro"
+				>Axios</a> for making HTTP requests and managing local state 
+			<a href="https://mobx.js.org/README.html">MobX</a>.
+		</li>
+		<li><strong>SQL: </strong>
+			Designing the database architecture for the application, I ensure 
+			optimal data management.  I work with 
+			<a href="https://learn.microsoft.com/en-us/ef/core/"
+				>Entity framework core</a>
+			to achive integration with the server layer, either by creating 
+			the databes from migratios or by generating code from existing 
+			databases.  Transact-SQL is my primary structured query language.
+		</li>
+	</ul>
+	<h3>RELEVANT PROJECTS</h3>
+	<p>The following projects were specifically developed to ensure offline 
+	functionality, taking into consideration the frequent hurricane strikes in 
+	Puerto Rico, which can result in months of disrupted connectivity.  These
+	projects allow extraction of data in Xlsx format and seamless importation 
+	into the command operation center by users and administrators.  During normal 
+	conditions, changes are automatically replicated. <br>
+	<strong>LODOS: </strong>This project enables users to manage the creation of solid 
+	wastethrough interactive forms, while service users can report the quantity 
+	of solid waste retrieved from each plant.  Calculations are performed prior to 
+	the drying process based on wastewater qualities and drying bed sizes.  User
+	authorization is role and location-based. <br/>
+	<strong>EOF-AAA: </strong>The objective of this project is to empower administrators, 
+	regional user, and other roles to manage the state and data of potable water 
+	facilities, generators, energy facilities, and energy complaints. Data rendering was 
+	is facilitated by GraphQL, employing the mediator design pattern.<br/>
+	<strong>Informe-Diario: </strong>Users are able to submit daily reports on water 
+	quality, including chlorine levels, turbidity, daily flow, and other calculated 
+	values.  These values are compared against data captured by <a>Aveva Historian</a> 
+	and must be reported monthly to the Health Department.  Data rendering in this 
+	project is achived through RestAPI.
+	<h3>PERSONAL PROJECTS</h3>
+	<p>I like completing various CTF challenges, installing
+	unconventional software, and reading:<br/>
+	<a href = "https://libreboot.org/docs/hardware/e6400.html">
+		<strong>Libreboot:</strong></a>
+	Flash the rom of DELL E6400.  Supprisingly easy to do.<br/>
+	<a href="https://suckless.org/">
+		<strong>Suckless:</strong></a>
+	Use dwm, dmenu, st and Surf browser.<br/>
+	<a href="https://overthewire.org/wargames/natas/">
+		<strong>Over The Wire NATAS:</strong></a>
+	Learn websites vulnerabilities and what 
+	mistakes you shouldent make when programming.  The website is written in php
+	but same concepts apply to other languages.  Can be compleated with curl and 
+	basic linux tools and scripting. <br/>
+	<a href="https://owasp.org/www-project-webgoat/"/>
+		<strong>OWASP Web Goat:</strong></a>
+	Similar to NATAS but written in Java and 
+	more extense.  Run in localhost, better to use a browser and intercepting proxy
+	such as MITMPROXY.<br/>
+	<a href="https://pwnable.kr/index.php">
+		<strong>PWNABLE.KR:</strong></a>
+	Mostly use of linux tools, GDB, reverse engeneering,
+	binary explotation.  Ongoing project.<br/>
+	<strong>The Art of Computational Programming: </strong>Books whose author needs no 
+	intruduction.  Ongoing reading, probably for the rest of my life, 
+	use it as reference for solving problems.
+	<h3>EDUCATION</h3>
+	<p><strong>Bachelor of Engineering:</strong>
+	<a href="">Universidad de Oviedo</a> (Gijón, Spain)
+	<p><i>Additional Professional Develpment:</i>
+	<ul>
+		<li>
+			<a href="https://lms.mitx.mit.edu/courses/course-v1:MITx+6.0002r_17+2023_Spring/about">
+				Intruduction to Computational Thinking and Data Science</a>
+			( 
+			<a href="https://courses.edx.org/certificates/ab1d89010a674fcca8eacdc8b99d4bc2"
+				>Certificate</a> ) - MITX (2020)
+		</li>
+		<li>
+			<a
+					>Application Server Product Exam</a> - AVEVA (2023)
+		</li>
+		<li>
+			<a href="https://www.scrum.org/certificates/982685"
+					>Professional Scrum Master 1</a> - Scrum.org (2023)
+		</li>
+		<li>
+			<a
+					>Historian Server Exam</a> - AVEVA (2023)
+		</li>
+		<li>
+			<a
+					>In Touch for System Platforms Exam</a> - AVEVA (2024)
+		</li>
+	</ul>
+	<h3>OTHER RELEVAN INFORMATION</h3>
+	<p><strong>Additional Languages: </strong> Spanish (native fluency)<br/>
+	<strong>Technology: </strong>Azure, HTML, CSS, Linux, Quemu/KVM,  Microsoft 365, Docker,
+	Python, C, PHP, Java.
+</article>
