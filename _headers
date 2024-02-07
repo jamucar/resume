@@ -3,4 +3,6 @@
 	Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; sandbox
 	Cache-Control: public; max-age=259200
 	Referrer-Policy: strict-origin-when-cross-origin
+	Cf-Cache-Status: DYNAMIC
+
 
