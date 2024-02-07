@@ -4,6 +4,6 @@
 	Cache-Control: public, max-age=180
 	Referrer-Policy: strict-origin-when-cross-origin
 	Cf-Cache-Status: DYNAMIC
-	Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+	Strict-Transport-Security: max-age=15552000
 
 
